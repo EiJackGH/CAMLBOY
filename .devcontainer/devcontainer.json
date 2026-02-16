@@ -1,8 +1,0 @@
-{
-  "name": "CAMLBOY Development",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers-extra/features/opam-asdf:2": {}
-  },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y opam libx11-dev pkg-config && opam init -y --disable-sandboxing && eval $(opam env) && opam install -y dune merlin utop"
-}
